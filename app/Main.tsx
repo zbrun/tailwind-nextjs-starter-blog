@@ -56,7 +56,7 @@ export default function Home({ posts }) {
                       <div className="text-base leading-6 font-medium">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          className="text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400"
                           aria-label={`Read more: "${title}"`}
                         >
                           Read more &rarr;
@@ -82,9 +82,7 @@ export default function Home({ posts }) {
         </div>
       )}
       {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
+        <div className="flex items-center justify-center pt-4"></div>
       )}
     </>
   )
